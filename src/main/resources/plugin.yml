@@ -1,0 +1,23 @@
+name: SimpleKits
+version: 1.0.0
+main: com.example.simplekits.SimpleKits
+api-version: '1.21'
+description: Three simple PvP kits (Sword, Axe+Shield, Pot) with a void arena.
+commands:
+  kit:
+    description: Open the kit menu or get a kit directly
+    usage: /kit [1|2|3]
+    aliases: [kits]
+  arena:
+    description: Teleport to, create, or reset the void arena
+    usage: /arena [tp|create|reset]
+permissions:
+  simplekits.use:
+    description: Allows using /kit
+    default: true
+  simplekits.arena.use:
+    description: Allows teleporting to the arena
+    default: true
+  simplekits.arena.admin:
+    description: Allows creating and resetting the arena
+    default: op
